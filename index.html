@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Socioeconômico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Perfil Socioeconômico</h1>
+    <div class="perfil">
+        <div class="file-upload-container">
+            <h2>Upload de Arquivo Excel</h2>
+            <input type="file" id="fileInput" class="file-input" />
+            <button class="botao-upload">Escolher Arquivo</button>
+        </div>
+        <div class="container">
+            <div id="menu"></div>
+            <div class="titleContainer">
+                <h2 id="chartTitle" class="hidden"></h2>
+                <canvas id="myChart" class="hidden"></canvas>
+                <div id="wordCloud" class="hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
